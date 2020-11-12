@@ -9,7 +9,7 @@
 #' @param offset parameter related to the tree() function of package tree.
 #' @param wt vector of non-negative observational weights; fractional weights are allowed.
 #' @param parms other parameters related to the tree function of package tree.
-#' @param minsplit minimal size for the node to be split. Default is minsplit = 10 and.
+#' @param minsplit minimal size for the node to be split. Default is minsplit = 10.
 #' @param minleaf minimal size of each resulting leaf for a node to be split. Default is minleaf = 5.
 #' @param mindev minimal value of node impurety to control node splitting. Default is mindev = 0.
 #' @param graph Logical. If TRUE (Default), plot the heatmaps associated to the point process y and optimal trees produced by spatcart.
