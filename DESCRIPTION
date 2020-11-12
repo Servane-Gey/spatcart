@@ -1,0 +1,32 @@
+Package: spatcart
+Title: Spatial classification trees
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Servane",
+           family = "Gey",
+           role = c("aut", "cre"),
+           email = "servane.gey@u-paris.fr",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: spatcart provides classification trees adapted to bivariate marked point processes by using a splitting criterion associated with the Kcross interaction between marks proposed by Ripley. The package also provides the corresponding graphics.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+Imports: 
+    spatstat,
+    tree,
+    ggplot2,
+    reshape2,
+    metR,
+    dplyr,
+    tidyr,
+    stats,
+    graphics,
+    utils
+Depends: 
+    R (>= 2.10)

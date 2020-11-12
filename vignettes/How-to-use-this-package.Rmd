@@ -1,0 +1,50 @@
+---
+title: "How to use package spatcart"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{How-to-use-this-package}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(spatcart)
+```
+
+# Package description
+
+**spatcart** provides classification trees adapted to spatial bivariate marked point processes by using a splitting criterion associated with the Kcross interaction between marks proposed by Ripley. The package also provides heatmaps coloring partitions implied by tree leaves with respect to the interaction between marks.  
+
+The full description of the SpatCART algorithm can be found in the article *Spatial Classification Trees*, by A. Bar-Hen, S. Gey and J.-M. Poggi, HAL 01837065 (2018).
+
+# Main features
+
+The main features of **spatcart** are presented with respect to the lines followed in *Spatial Classification Trees*.  
+
+
+## Spatial classification trees
+
+* **spatcart**  
+* **spattree, spatprune**
+* **partition.spattree**
+
+## Simulations
+
+* **damier, repulsion**
+* **gg.partition.tree**
+
+## Paracou data set
+
+* **Paracou**
+* **Paracoudata, Paracou.plot**
+
+
+
+
