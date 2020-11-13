@@ -114,8 +114,8 @@ This produces a maximal tree having at least *minleaf = 5* points in each leaf, 
 
 
 Prune the maximal tree to obtain the pruned subtrees sequence, and the largest and smallest optimal trees:
-```{r}
-seq = spatprune(tmax)
+```{r, fig.width=4.5, fig.align="center"}
+seq = spatprune(tmax$tree)
 ```
 
 Here optional parameters are set as default: *method = "deviance"* and *graph = TRUE*.   
