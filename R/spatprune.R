@@ -4,7 +4,7 @@
 #'
 #' @param t maximal tree obtained from the spattree() or tree() function.
 #' @param method optional. Parameter method = c("deviance", "misclass") sets the pruning method to use. "deviance" is related to class probability trees, while "misclass" is related to classical misclassification trees. Default is method = "deviance".
-#' @param graph logical. If TRUE (Default), also produce the graphs of the number of leaves of subtrees of the pruned subtrees sequence with respect to the complexity parameter used in the pruning algorithm. The triangle symbol represents the tree selected via the modified largest jump method, while the diamond symbol represents the tree selected via the largest plateau method.
+#' @param graph logical. If TRUE (Default), also produce the graphics of the number of leaves of subtrees of the pruned subtrees sequence with respect to the complexity parameter used in the pruning algorithm. The triangle symbol represents the tree selected via the modified largest jump method, while the diamond symbol represents the tree selected via the largest plateau method.
 #'
 #' @return a list of objects containing the sequence of subtrees pruned from tree t, the largest and smallest optimal trees obtained from the slope heuristics.
 #'

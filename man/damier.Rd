@@ -11,7 +11,7 @@ damier(n, model = "unif", h = 0.4, d = 3, graph = TRUE)
 
 \item{model}{nominal, model = c("unif", "Poisson"). If model = "unif", generates points uniformly on the window. If model = "Poisson", generates points as a Poisson point process in the window. Default is model = "unif".}
 
-\item{h}{margin parameter defining the mixing proportion of marks inside window. Default is h = 0.4.}
+\item{h}{margin parameter defining the mixing proportion of marks inside windows. Default is h = 0.4.}
 
 \item{d}{set the number of squares in the checkerboard as dxd. Default is d = 3.}
 

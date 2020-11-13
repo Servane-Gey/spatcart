@@ -19,7 +19,7 @@ partition.spattree(a, ypp, K, d = 100)
 an object of class "ggplot".
 }
 \description{
-Plot the heatmap of interaction between marks for a spatial bivariate marked point process
+Plot the heatmap induced by a tree partition of interaction between marks for a spatial bivariate marked point process
 }
 \examples{
 library(spatcart)

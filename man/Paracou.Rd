@@ -19,7 +19,7 @@ Paracou(r, minsplit = 10, minleaf = 5, graph = TRUE)
 a list of 7 objects of class "ggplot".
 }
 \description{
-Produce graphical results of CART and SpatCART algorithms at fixed resolution for the Paracou data set.
+Produce graphical results of CART and SpatCART algorithms at fixed initial resolution for the Paracou data set.
 }
 \examples{
 Paracou(15)

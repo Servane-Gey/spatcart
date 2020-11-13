@@ -11,9 +11,9 @@
 #' @return a data.frame object with variables (x, y, marks).
 #'
 #' @import spatstat
-#' @importFrom  graphics points
+#' @importFrom graphics points
 #' @importFrom graphics lines
-#' @importFrom  stats runif
+#' @importFrom stats runif
 #' @importFrom stats rbinom
 #'
 #' @export

@@ -33,7 +33,7 @@ spatcart(
 
 \item{parms}{other parameters related to the tree function of package tree.}
 
-\item{minsplit}{minimal size for the node to be split. Default is minsplit = 10 and.}
+\item{minsplit}{minimal size for the node to be split. Default is minsplit = 10.}
 
 \item{minleaf}{minimal size of each resulting leaf for a node to be split. Default is minleaf = 5.}
 
@@ -45,7 +45,7 @@ spatcart(
 a list of objects containing the maximal, largest and smallest optimal trees; the sequence of pruned subtrees; the values of scale resolution and impurity inside nodes of the maximal tree.
 }
 \description{
-Spatial Classification Trees using Ripley's intertype K-function to partition spatial bivaraite marked point process, with pruning.
+Spatial Classification Trees using Ripley's intertype K-function to partition spatial bivariate marked point process, with pruning.
 }
 \details{
 parameter minsplit must be at least 2xminleaf.

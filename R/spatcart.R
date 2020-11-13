@@ -1,6 +1,6 @@
 #' Spatial Classification Trees
 #'
-#' @description Spatial Classification Trees using Ripley's intertype K-function to partition spatial bivaraite marked point process, with pruning.
+#' @description Spatial Classification Trees using Ripley's intertype K-function to partition spatial bivariate marked point process, with pruning.
 #'
 #' @param ypp spatial bivariate marked point process of class 'ppp' (see spatstat).
 #' @param r initial resolution scale to use to construct spatcart maximal tree. Decreasing with splitting..

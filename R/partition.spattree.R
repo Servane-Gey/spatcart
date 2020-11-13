@@ -1,6 +1,6 @@
 #' Heatmap of interaction between marks
 #'
-#' @description Plot the heatmap of interaction between marks for a spatial bivariate marked point process
+#' @description Plot the heatmap induced by a tree partition of interaction between marks for a spatial bivariate marked point process
 #'
 #' @param a an object of class "tree". Currently provided by the functions spatcart or spattree.
 #' @param ypp the spatial bivariate marked point process used to generate tree a, of class 'ppp' (see spatstat).

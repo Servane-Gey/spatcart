@@ -1,6 +1,6 @@
 #' CART and SpatCART on the Paracou data set
 #'
-#' @description Produce graphical results of CART and SpatCART algorithms at fixed resolution for the Paracou data set.
+#' @description Produce graphical results of CART and SpatCART algorithms at fixed initial resolution for the Paracou data set.
 #'
 #' @param r the initial resolution used by SpatCART to construct the maximal tree (see spattree).
 #' @param minsplit minimal size for the node to be split. Default is minsplit = 10 and.
