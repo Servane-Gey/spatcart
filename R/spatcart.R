@@ -1,8 +1,8 @@
 #' Spatial Classification Trees
 #'
-#' @description Spatial Classification Trees using Ripley's intertype K-function to partition spatial bivariate marked point process, with pruning.
+#' @description Spatial Classification Trees using Ripley's intertype K-function to partition bivariate marked spatial point process, with pruning.
 #'
-#' @param ypp spatial bivariate marked point process of class 'ppp' (see spatstat).
+#' @param ypp bivariate marked spatial point process of class 'ppp' (see spatstat).
 #' @param r initial resolution scale to use to construct spatcart maximal tree. Decreasing with splitting..
 #' @param method optional. Parameter method = c("deviance", "misclass") sets the pruning method to use. "deviance" is related to class probability trees, while "misclass" is related to classical misclassification trees. Default is method = "deviance".
 #' @param ties logical. If TRUE (default), in case of ties in splitting rule, the first split achieving maximum loss in impurity is taken. If FALSE, scale adaptation inside nodes is made to avoid ties.
@@ -24,14 +24,14 @@
 #'
 #' @details parameter minsplit must be at least 2xminleaf.
 #'
-#' @references *Spatial Classification Trees*, by A. Bar-Hen, S. Gey and J.-M. Poggi, HAL 01837065 (2018).
+#' @references *Spatial Classification Trees*, by A. Bar-Hen, S. Gey and J.-M. Poggi (2020).
 #'
 #' @export
 #'
 #' @examples
 #' library(spatcart)
 #' library(spatstat)
-#' # Simulate spatial bivariate marked point process
+#' # Simulate bivariate marked spatial point process
 #' chess = damier(500, h=0.45, model="Poisson")
 #' ypp = ppp(x=chess$data$x1,
 #' y=chess$data$x2,

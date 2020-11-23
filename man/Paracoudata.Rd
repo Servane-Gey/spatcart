@@ -7,10 +7,10 @@
 Paracoudata()
 }
 \value{
-the spatial bivaraite point process of class 'ppp'.
+the bivaraite spatial point process of class 'ppp'.
 }
 \description{
-Load the Paracou data set as a spatial bivaraite point process.
+Load the Paracou data set as a bivaraite spatial point process.
 }
 \examples{
 Paracoudata()

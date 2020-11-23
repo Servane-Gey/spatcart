@@ -13,15 +13,15 @@ damier(n, model = "unif", h = 0.4, d = 3, graph = TRUE)
 
 \item{h}{margin parameter defining the mixing proportion of marks inside windows. Default is h = 0.4.}
 
-\item{d}{set the number of squares in the checkerboard as dxd. Default is d = 3.}
+\item{d}{set the number of squares in the chessboard as dxd. Default is d = 3.}
 
-\item{graph}{logical. If TRUE (default), plot the data scatter plot and the checkerboard's squares.}
+\item{graph}{logical. If TRUE (default), plot the data scatter plot and the chessboard's squares.}
 }
 \value{
 a list of data.frame objects with data points, marks distribution and Bayes predictions.
 }
 \description{
-Simulation of a spatial bivariate marked point process with marks distribued as a checkerboard.
+Simulation of a bivariate marked spatial point process with marks distribued as a chessboard.
 }
 \examples{
 damier(1000, model = "unif")

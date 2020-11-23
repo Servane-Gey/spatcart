@@ -20,19 +20,19 @@ library(spatcart)
 
 # Package description
 
-**spatcart** provides classification trees adapted to spatial bivariate marked point processes by using a splitting criterion associated with the intertype K-function interaction between marks proposed by Ripley. The package also provides heatmap colored partitions induced by tree leaves with respect to interaction between marks.  
+**spatcart** provides classification trees adapted to bivariate marked spatial point processes by using a splitting criterion associated with the intertype K-function interaction between marks proposed by Ripley. The package also provides heatmap colored partitions induced by tree leaves with respect to interaction between marks.  
 
-The full description of the SpatCART algorithm can be found in the article *Spatial Classification Trees*, by A. Bar-Hen, S. Gey and J.-M. Poggi, HAL 01837065 (2018).  
+The full description of the SpatCART algorithm can be found in the article *Spatial CART Classification Trees*, by A. Bar-Hen, S. Gey and J.-M. Poggi (2020).  
 
 
 # Main features
 
-The main features of **spatcart** are presented with respect to the lines followed in the article *Spatial Classification Trees*.  
+The main features of **spatcart** are presented with respect to the lines followed in the article *Spatial CART Classification Trees*.  
 
 
-## Spatial classification trees
+## Spatial CART classification trees
 
-* **spatcart**  constructs the spatial classification trees using Ripley's intertype K-function as impurity function to partition spatial bivariate marked point process, with pruning. Also provides optional graphical results on the obtained partitions. The output values of the function *spatcart()* are listed in the following objects:
+* **spatcart**  constructs the spatial CART classification trees using Ripley's intertype K-function as impurity function to partition bivariate marked spatial point process, with pruning. Also provides optional graphical results on the obtained partitions. The output values of the function *spatcart()* are listed in the following objects:
     + *max.tree*: maximal tree, of class 'tree'.
     + *pruned.seq*: sequence of subtrees pruned from the maximal one, list of corresponding number of leaves, pruning complexities, and deviance.
     + *opt.tree.max*: largest optimal tree, selected among the pruned sequence with respect to the modified largest gap slope heuristic (see article). Object of class 'tree'.
@@ -91,12 +91,12 @@ This produces a maximal tree having at least *minleaf = 5* points in each leaf, 
 *graph = TRUE* produces heatmap colored partitions induced by respectively the maximal, largest optimal and smallest optimal trees' leaves with respect to the interaction between marks.
 
 
-* **spattree** constructs the maximal spatial classification tree using Ripley's intertype K-function as impurity function to partition spatial bivariate marked point process. The output values of the function *spattree()* are listed in the following objects:
+* **spattree** constructs the maximal spatial CART classification tree using Ripley's intertype K-function as impurity function to partition bivariate marked spatial point process. The output values of the function *spattree()* are listed in the following objects:
     + *max.tree*: maximal tree, of class 'tree'. 
     + *cp*: numeric vector of inside node scale resolutions in maximal tree.
     + *K*: numeric vector of inside node impurities in maximal tree.  
     
-Construct the maximal spatial classification tree at initial scale resolution *r0* on the *ants* data set:
+Construct the maximal spatial CART classification tree at initial scale resolution *r0* on the *ants* data set:
 ```{r}
 tmax = spattree(ypp, r0)
 ```
@@ -124,9 +124,9 @@ Here optional parameters are set as default: *method = "deviance"* and *graph = 
 
 *graph = TRUE* produces the graphics of the number of leaves of the pruned subtrees sequence with respect to the complexity parameter used in the pruning algorithm. The triangle symbol represents the tree selected via the modified largest jump method, while the diamond symbol represents the tree selected via the largest plateau method. 
     
-* **partition.spattree** plots the heatmap colored partitions induced by a tree's leaves with respect to the interaction between marks of a spatial bivariate marked point process. The output value of the function *partition.spattree()* is the corresponding 'ggplot' object. Needs also the input values of impurities inside tree leaves.  
+* **partition.spattree** plots the heatmap colored partitions induced by a tree's leaves with respect to the interaction between marks of a bivariate marked spatial  point process. The output value of the function *partition.spattree()* is the corresponding 'ggplot' object. Needs also the input values of impurities inside tree leaves.  
 
-Plot the partition induced by the maximal spatial classification tree constructed on the *ants* data set:
+Plot the partition induced by the maximal spatial CART classification tree constructed on the *ants* data set:
 ```{r, fig.width = 4, fig.height = 2.75, fig.align="center"}
 K = tmax$K[rownames(tmax$tree$frame)][tmax$tree$frame$var=="<leaf>"]
 partition.spattree(tmax$tree, ypp, K)
@@ -136,7 +136,7 @@ Here the optional parameter *d* is set as default *d = 100*. *d* sets the resolu
 
 ## Simulations
 
-The features for simulations of package **spatcart** are presented to cope with the simulation study proposed in R script *Simulation.study.R*, which can be found on the github repository [https://github.com/Servane-Gey/Spatial-classification-trees](https://github.com/Servane-Gey/Spatial-classification-trees). For more details about simualtions, please see the article *Spatial Classification Trees*, by A. Bar-Hen, S. Gey and J.-M. Poggi, HAL 01837065 (2018).
+The features for simulations of package **spatcart** are presented to cope with the simulation study proposed in R script *Simulation.study.R*, which can be found on the github repository [https://github.com/Servane-Gey/Spatial-classification-trees](https://github.com/Servane-Gey/Spatial-classification-trees). For more details about simualtions, please see the article *Spatial CART Classification Trees*, by A. Bar-Hen, S. Gey and J.-M. Poggi (2020).
 
 * **damier, repulsion** respectively simulates the *chess* and *locally repulsive* data sets presented in the article. The optional parameter *model* of the function *damier()* allows to simulate points as uniformly distributed on the unit square if *model = "unif"* (default), or as a Poisson point process on the unit square if *model = "Poisson"*.  
 For both functions *damier()* and *repulsion()*, 
@@ -178,7 +178,7 @@ See function *partition.tree()* of package *tree* for optional arguments.
 
 ## Paracou data set
 
-The features for the Paracou data set proposed in package **spatcart** are presented to cope with the experiments done in the article *Spatial Classification Trees*, by A. Bar-Hen, S. Gey and J.-M. Poggi, HAL 01837065 (2018). The original data set can be freely downloaded from [https://paracou.cirad.fr/](https://paracou.cirad.fr/).  
+The features for the Paracou data set proposed in package **spatcart** are presented to cope with the experiments done in the article *Spatial CART Classification Trees*, by A. Bar-Hen, S. Gey and J.-M. Poggi (2020). The original data set can be freely downloaded from [https://paracou.cirad.fr/](https://paracou.cirad.fr/).  
 
 * **Paracou** produces graphical results of CART and SpatCART algorithms at fixed initial resolution for the Paracou data set. The output value of the function *Paracou()* is the following list of 'ggplot' objects:
     + *DiffK*: graphic of difference between estimated and theoretical intertype K-functions with respect to scale resolution, with a dashed line at the value of initial resolution.
@@ -195,7 +195,7 @@ Paracou(15)
 ```
 
        
-* **Paracoudata, Paracou.plot** respectively loads the Paracou data set as a spatial bivariate point process of class 'ppp', and plots the heatmap colored partition induced by a SpatCART classification tree's leaves with respect to the interaction between marks of the Paracou data set. The output value of the function *Paracou.plot()* is the corresponding 'ggplot' object. Needs also the input values of impurities inside tree leaves.
+* **Paracoudata, Paracou.plot** respectively loads the Paracou data set as a bivariate spatial point process of class 'ppp', and plots the heatmap colored partition induced by a SpatCART classification tree's leaves with respect to the interaction between marks of the Paracou data set. The output value of the function *Paracou.plot()* is the corresponding 'ggplot' object. Needs also the input values of impurities inside tree leaves.
 
 Plot the graphic of heatmap colored partition induced by the SpatCART class probability tree's leaves:
 ```{r, message = FALSE, fig.width = 4.5, fig.height = 3.25, fig.align="center"}

@@ -1,6 +1,6 @@
 #' Repulsive simulated data set
 #'
-#' @description Simulation of a locally repulsive spatial marked point process
+#' @description Simulation of a locally repulsive marked spatial point process
 #'
 #' @param n intensity of the Poisson point process used to simulate data (see spatstat).
 #' @param r value of the local repulsive scale. 0< r <1.

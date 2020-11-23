@@ -25,5 +25,5 @@ t = tree(Species~Sepal.Length+Petal.Length, data = iris)
 pruned = spatprune(t)
 }
 \references{
-\emph{Spatial Classification Trees}, by A. Bar-Hen, S. Gey and J.-M. Poggi, HAL 01837065 (2018).
+\emph{Spatial Classification Trees}, by A. Bar-Hen, S. Gey and J.-M. Poggi (2020).
 }

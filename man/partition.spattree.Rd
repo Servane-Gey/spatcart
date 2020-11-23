@@ -9,7 +9,7 @@ partition.spattree(a, ypp, K, d = 100)
 \arguments{
 \item{a}{an object of class "tree". Currently provided by the functions spatcart or spattree.}
 
-\item{ypp}{the spatial bivariate marked point process used to generate tree a, of class 'ppp' (see spatstat).}
+\item{ypp}{the bivariate marked spatial point process used to generate tree a, of class 'ppp' (see spatstat).}
 
 \item{K}{the values of interactions between marks of the point process ypp restricted to the leaves of tree a. Interactions are computed through the Ripley's Kcross function. They can be found in output values of functions spatcart or spattree.}
 
@@ -19,7 +19,7 @@ partition.spattree(a, ypp, K, d = 100)
 an object of class "ggplot".
 }
 \description{
-Plot the heatmap induced by a tree partition of interaction between marks for a spatial bivariate marked point process
+Plot the heatmap induced by a tree partition of interaction between marks for a bivariate marked spatial point process
 }
 \examples{
 library(spatcart)
@@ -34,5 +34,5 @@ K = t$K[rownames(a$frame)][a$frame$var=="<leaf>"]
 partition.spattree(a, ypp, K)
 }
 \references{
-\emph{Spatial Classification Trees}, by A. Bar-Hen, S. Gey and J.-M. Poggi, HAL 01837065 (2018).
+\emph{Spatial Classification Trees}, by A. Bar-Hen, S. Gey and J.-M. Poggi (2020).
 }

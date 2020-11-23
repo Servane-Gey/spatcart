@@ -9,7 +9,7 @@ Paracou.plot(a, ypp, K, d = 100)
 \arguments{
 \item{a}{an object of class "tree". Currently provided by the functions spatcart or spattree.}
 
-\item{ypp}{the Paracou spatial bivariate marked point process used to generate tree a.}
+\item{ypp}{the Paracou bivariate marked spatial point process used to generate tree a.}
 
 \item{K}{the values of interactions between marks of the point process ypp restricted to the leaves of tree a. Interactions are computed through the Ripley's Kcross function. They can be found in output values of functions spatcart or spattree.}
 
@@ -23,7 +23,7 @@ Plot the heatmap of interaction between marks with altitudes information for the
 }
 \examples{
 library(spatcart)
-# Loading Paracou spatial bivariate point process
+# Loading Paracou bivariate spatial point process
 ypp = Paracoudata()
 
 # SpatCART trees
@@ -35,5 +35,5 @@ K = t$K[rownames(a$frame)][a$frame$var=="<leaf>"]
 Paracou.plot(a,ypp,K)
 }
 \references{
-\emph{Spatial Classification Trees}, by A. Bar-Hen, S. Gey and J.-M. Poggi, HAL 01837065 (2018).
+\emph{Spatial Classification Trees}, by A. Bar-Hen, S. Gey and J.-M. Poggi (2020).
 }

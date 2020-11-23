@@ -25,5 +25,5 @@ Produce graphical results of CART and SpatCART algorithms at fixed initial resol
 Paracou(15)
 }
 \references{
-\emph{Spatial Classification Trees}, by A. Bar-Hen, S. Gey and J.-M. Poggi, HAL 01837065 (2018).
+\emph{Spatial Classification Trees}, by A. Bar-Hen, S. Gey and J.-M. Poggi (2020).
 }

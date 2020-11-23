@@ -1,15 +1,15 @@
 #' Heatmap of interaction between marks
 #'
-#' @description Plot the heatmap induced by a tree partition of interaction between marks for a spatial bivariate marked point process
+#' @description Plot the heatmap induced by a tree partition of interaction between marks for a bivariate marked spatial point process
 #'
 #' @param a an object of class "tree". Currently provided by the functions spatcart or spattree.
-#' @param ypp the spatial bivariate marked point process used to generate tree a, of class 'ppp' (see spatstat).
+#' @param ypp the bivariate marked spatial point process used to generate tree a, of class 'ppp' (see spatstat).
 #' @param K the values of interactions between marks of the point process ypp restricted to the leaves of tree a. Interactions are computed through the Ripley's Kcross function. They can be found in output values of functions spatcart or spattree.
 #' @param d a scalar parameter defining the dxd grid resolution to produce the heatmap associated to the leaves of tree a and values of K. Default value is d = 100, leading to a 10e+4 grid of points.
 #'
 #' @return an object of class "ggplot".
 #'
-#' @references *Spatial Classification Trees*, by A. Bar-Hen, S. Gey and J.-M. Poggi, HAL 01837065 (2018).
+#' @references *Spatial Classification Trees*, by A. Bar-Hen, S. Gey and J.-M. Poggi (2020).
 #'
 #' @import dplyr
 #' @import tidyr

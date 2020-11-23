@@ -1,8 +1,8 @@
 #' Spatial Classification Maximal Tree
 #'
-#' @description Spatial Classification Maximal Tree construction using the Ripley's intertype K-function to partition spatial bivariate marked point process. Requires packages "spatstat" and "tree".
+#' @description Spatial Classification Maximal Tree construction using the Ripley's intertype K-function to partition bivariate marked spatial point process. Requires packages "spatstat" and "tree".
 #'
-#' @param y spatial bivariate marked point process of class 'ppp' (see spatstat).
+#' @param y bivariate marked spatial point process of class 'ppp' (see spatstat).
 #' @param r initial resolution scale to use to construct spatcart maximal tree. Decreasing with splitting..
 #' @param ties logical. If TRUE (default), in case of ties in splitting rule, the first split achieving maximum loss in impurity is taken. If FALSE, scale adaptation inside nodes is made to avoid ties.
 #' @param offset parameter related to the tree() function of package tree.
@@ -21,7 +21,7 @@
 #'
 #' @details parameter minsplit must be at least 2xminleaf.
 #'
-#' @references *Spatial Classification Trees*, by A. Bar-Hen, S. Gey and J.-M. Poggi, HAL 01837065 (2018).
+#' @references *Spatial Classification Trees*, by A. Bar-Hen, S. Gey and J.-M. Poggi (2020).
 #'
 #' @export
 #'

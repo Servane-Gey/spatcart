@@ -19,7 +19,7 @@ spatcart(
 )
 }
 \arguments{
-\item{ypp}{spatial bivariate marked point process of class 'ppp' (see spatstat).}
+\item{ypp}{bivariate marked spatial point process of class 'ppp' (see spatstat).}
 
 \item{r}{initial resolution scale to use to construct spatcart maximal tree. Decreasing with splitting..}
 
@@ -45,7 +45,7 @@ spatcart(
 a list of objects containing the maximal, largest and smallest optimal trees; the sequence of pruned subtrees; the values of scale resolution and impurity inside nodes of the maximal tree.
 }
 \description{
-Spatial Classification Trees using Ripley's intertype K-function to partition spatial bivariate marked point process, with pruning.
+Spatial Classification Trees using Ripley's intertype K-function to partition bivariate marked spatial point process, with pruning.
 }
 \details{
 parameter minsplit must be at least 2xminleaf.
@@ -53,7 +53,7 @@ parameter minsplit must be at least 2xminleaf.
 \examples{
 library(spatcart)
 library(spatstat)
-# Simulate spatial bivariate marked point process
+# Simulate bivariate marked spatial point process
 chess = damier(500, h=0.45, model="Poisson")
 ypp = ppp(x=chess$data$x1,
 y=chess$data$x2,
@@ -89,5 +89,5 @@ t = spatcart(ypp, r, ties = FALSE)
 t = spatcart(ypp, r, minsplit = 50, minleaf = 25)
 }
 \references{
-\emph{Spatial Classification Trees}, by A. Bar-Hen, S. Gey and J.-M. Poggi, HAL 01837065 (2018).
+\emph{Spatial Classification Trees}, by A. Bar-Hen, S. Gey and J.-M. Poggi (2020).
 }

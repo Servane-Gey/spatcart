@@ -21,7 +21,7 @@ repulsion(n, r, h = 0.4, ncase = 2, graph = TRUE)
 a data.frame object with variables (x, y, marks).
 }
 \description{
-Simulation of a locally repulsive spatial marked point process
+Simulation of a locally repulsive marked spatial point process
 }
 \examples{
 repulsion(1000, 0.05)

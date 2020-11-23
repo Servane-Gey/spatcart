@@ -3,13 +3,13 @@
 #' @description  Plot the heatmap of interaction between marks with altitudes information for the Paracou data set.
 #'
 #' @param a an object of class "tree". Currently provided by the functions spatcart or spattree.
-#' @param ypp the Paracou spatial bivariate marked point process used to generate tree a.
+#' @param ypp the Paracou bivariate marked spatial point process used to generate tree a.
 #' @param K the values of interactions between marks of the point process ypp restricted to the leaves of tree a. Interactions are computed through the Ripley's Kcross function. They can be found in output values of functions spatcart or spattree.
 #' @param d a scalar parameter defining the dxd grid resolution to produce the heatmap associated to the leaves of tree a and values of K. Default value is d = 100, leading to a 10e+4 grid of points.
 #'
 #' @return an object of class "ggplot".
 #'
-#' @references *Spatial Classification Trees*, by A. Bar-Hen, S. Gey and J.-M. Poggi, HAL 01837065 (2018).
+#' @references *Spatial Classification Trees*, by A. Bar-Hen, S. Gey and J.-M. Poggi (2020).
 #'
 #' @import spatstat
 #' @import dplyr
@@ -22,7 +22,7 @@
 #'
 #' @examples
 #' library(spatcart)
-#' # Loading Paracou spatial bivariate point process
+#' # Loading Paracou bivariate spatial point process
 #' ypp = Paracoudata()
 #'
 #' # SpatCART trees

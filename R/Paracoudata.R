@@ -1,8 +1,8 @@
 #' Load Paracou data set
 #'
-#' @description Load the Paracou data set as a spatial bivaraite point process.
+#' @description Load the Paracou data set as a bivaraite spatial point process.
 #'
-#' @return the spatial bivaraite point process of class 'ppp'.
+#' @return the bivaraite spatial point process of class 'ppp'.
 #' @export
 #'
 #' @examples

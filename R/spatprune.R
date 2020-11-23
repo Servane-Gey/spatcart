@@ -8,7 +8,7 @@
 #'
 #' @return a list of objects containing the sequence of subtrees pruned from tree t, the largest and smallest optimal trees obtained from the slope heuristics.
 #'
-#' @references *Spatial Classification Trees*, by A. Bar-Hen, S. Gey and J.-M. Poggi, HAL 01837065 (2018).
+#' @references *Spatial Classification Trees*, by A. Bar-Hen, S. Gey and J.-M. Poggi (2020).
 #'
 #' @import dplyr
 #' @import tidyr

@@ -17,7 +17,7 @@ spattree(
 )
 }
 \arguments{
-\item{y}{spatial bivariate marked point process of class 'ppp' (see spatstat).}
+\item{y}{bivariate marked spatial point process of class 'ppp' (see spatstat).}
 
 \item{r}{initial resolution scale to use to construct spatcart maximal tree. Decreasing with splitting..}
 
@@ -39,7 +39,7 @@ spattree(
 a list of objects containing the maximal tree; the sequence of pruned subtrees and the corresponding complexities; the values of scale resolution and impurity inside nodes of the maximal tree.
 }
 \description{
-Spatial Classification Maximal Tree construction using the Ripley's intertype K-function to partition spatial bivariate marked point process. Requires packages "spatstat" and "tree".
+Spatial Classification Maximal Tree construction using the Ripley's intertype K-function to partition bivariate marked spatial point process. Requires packages "spatstat" and "tree".
 }
 \details{
 parameter minsplit must be at least 2xminleaf.
@@ -59,5 +59,5 @@ t = spattree(ypp, 15, ties = FALSE)
 t = spattree(ypp, 15, minsplit = 20, minleaf = 10)
 }
 \references{
-\emph{Spatial Classification Trees}, by A. Bar-Hen, S. Gey and J.-M. Poggi, HAL 01837065 (2018).
+\emph{Spatial Classification Trees}, by A. Bar-Hen, S. Gey and J.-M. Poggi (2020).
 }
