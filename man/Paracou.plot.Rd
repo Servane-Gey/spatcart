@@ -35,5 +35,5 @@ K = t$K[rownames(a$frame)][a$frame$var=="<leaf>"]
 Paracou.plot(a,ypp,K)
 }
 \references{
-\emph{Spatial Classification Trees}, by A. Bar-Hen, S. Gey and J.-M. Poggi (2020).
+\emph{Spatial Classification Trees}, by A. Bar-Hen, S. Gey and J.-M. Poggi (2021).
 }

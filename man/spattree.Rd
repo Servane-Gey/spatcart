@@ -59,5 +59,5 @@ t = spattree(ypp, 15, ties = FALSE)
 t = spattree(ypp, 15, minsplit = 20, minleaf = 10)
 }
 \references{
-\emph{Spatial Classification Trees}, by A. Bar-Hen, S. Gey and J.-M. Poggi (2020).
+\emph{Spatial Classification Trees}, by A. Bar-Hen, S. Gey and J.-M. Poggi (2021).
 }

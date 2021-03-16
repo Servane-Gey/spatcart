@@ -9,7 +9,7 @@
 #'
 #' @return an object of class "ggplot".
 #'
-#' @references *Spatial Classification Trees*, by A. Bar-Hen, S. Gey and J.-M. Poggi (2020).
+#' @references *Spatial Classification Trees*, by A. Bar-Hen, S. Gey and J.-M. Poggi (2021).
 #'
 #' @import spatstat
 #' @import dplyr

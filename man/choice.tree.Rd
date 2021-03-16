@@ -25,5 +25,5 @@ choice.tree(seq)
 
 }
 \references{
-\emph{Spatial Classification Trees}, by A. Bar-Hen, S. Gey and J.-M. Poggi (2020).
+\emph{Spatial Classification Trees}, by A. Bar-Hen, S. Gey and J.-M. Poggi (2021).
 }

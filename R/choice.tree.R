@@ -7,7 +7,7 @@
 #'
 #' @return a tibble object with 2 arguments
 #'
-#' @references *Spatial Classification Trees*, by A. Bar-Hen, S. Gey and J.-M. Poggi (2020).
+#' @references *Spatial Classification Trees*, by A. Bar-Hen, S. Gey and J.-M. Poggi (2021).
 #'
 #' @import dplyr
 #' @import tidyr

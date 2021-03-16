@@ -21,7 +21,7 @@
 #'
 #' @details parameter minsplit must be at least 2xminleaf.
 #'
-#' @references *Spatial Classification Trees*, by A. Bar-Hen, S. Gey and J.-M. Poggi (2020).
+#' @references *Spatial Classification Trees*, by A. Bar-Hen, S. Gey and J.-M. Poggi (2021).
 #'
 #' @export
 #'

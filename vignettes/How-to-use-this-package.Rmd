@@ -22,7 +22,7 @@ library(spatcart)
 
 **spatcart** provides classification trees adapted to bivariate marked spatial point processes by using a splitting criterion associated with the intertype K-function interaction between marks proposed by Ripley. The package also provides heatmap colored partitions induced by tree leaves with respect to interaction between marks.  
 
-The full description of the SpatCART algorithm can be found in the article *Spatial CART Classification Trees*, by A. Bar-Hen, S. Gey and J.-M. Poggi (2020).  
+The full description of the SpatCART algorithm can be found in the article *Spatial CART Classification Trees*, by A. Bar-Hen, S. Gey and J.-M. Poggi, *Computational Statistics* (2021).  
 
 
 # Main features
@@ -136,7 +136,7 @@ Here the optional parameter *d* is set as default *d = 100*. *d* sets the resolu
 
 ## Simulations
 
-The features for simulations of package **spatcart** are presented to cope with the simulation study proposed in R script *Simulation.study.R*, which can be found on the github repository [https://github.com/Servane-Gey/Spatial-classification-trees](https://github.com/Servane-Gey/Spatial-classification-trees). For more details about simualtions, please see the article *Spatial CART Classification Trees*, by A. Bar-Hen, S. Gey and J.-M. Poggi (2020).
+The features for simulations of package **spatcart** are presented to cope with the simulation study proposed in R script *Simulation.study.R*, which can be found on the github repository [https://github.com/Servane-Gey/Spatial-classification-trees](https://github.com/Servane-Gey/Spatial-classification-trees). For more details about simualtions, please see the article *Spatial CART Classification Trees*, by A. Bar-Hen, S. Gey and J.-M. Poggi, *Computational Statistics* (2021).
 
 * **damier, repulsion** respectively simulates the *chess* and *locally repulsive* data sets presented in the article. The optional parameter *model* of the function *damier()* allows to simulate points as uniformly distributed on the unit square if *model = "unif"* (default), or as a Poisson point process on the unit square if *model = "Poisson"*.  
 For both functions *damier()* and *repulsion()*, 
@@ -178,7 +178,7 @@ See function *partition.tree()* of package *tree* for optional arguments.
 
 ## Paracou data set
 
-The features for the Paracou data set proposed in package **spatcart** are presented to cope with the experiments done in the article *Spatial CART Classification Trees*, by A. Bar-Hen, S. Gey and J.-M. Poggi (2020). The original data set can be freely downloaded from [https://paracou.cirad.fr/](https://paracou.cirad.fr/).  
+The features for the Paracou data set proposed in package **spatcart** are presented to cope with the experiments done in the article *Spatial CART Classification Trees*, by A. Bar-Hen, S. Gey and J.-M. Poggi, *Computational Statistics* (2021). The original data set can be freely downloaded from [https://paracou.cirad.fr/](https://paracou.cirad.fr/).  
 
 * **Paracou** produces graphical results of CART and SpatCART algorithms at fixed initial resolution for the Paracou data set. The output value of the function *Paracou()* is the following list of 'ggplot' objects:
     + *DiffK*: graphic of difference between estimated and theoretical intertype K-functions with respect to scale resolution, with a dashed line at the value of initial resolution.
