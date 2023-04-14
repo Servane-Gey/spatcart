@@ -18,9 +18,9 @@
 #'
 #' @import dplyr
 #' @import tidyr
-#' @import spatstat
 #' @import tree
 #' @import ggplot2
+#' @import spatstat
 #'
 #' @details parameter minsplit must be at least 2xminleaf.
 #'

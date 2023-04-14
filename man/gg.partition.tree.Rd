@@ -2,7 +2,7 @@
 % Please edit documentation in R/gg.partition.tree.R
 \name{gg.partition.tree}
 \alias{gg.partition.tree}
-\title{Partition of a tree (with ggplot2)}
+\title{Partition of a tree (requires ggplot2)}
 \usage{
 gg.partition.tree(tree, ordvars, ...)
 }
@@ -17,7 +17,7 @@ gg.partition.tree(tree, ordvars, ...)
 an object of class "ggplot".
 }
 \description{
-Plot the partition of a tree involving one or two variables. Requires package ggplot2.
+Plots the partition of a tree involving one or two variables. Requires package ggplot2.
 }
 \examples{
 library(tree)

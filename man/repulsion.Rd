@@ -24,6 +24,7 @@ a data.frame object with variables (x, y, marks).
 Simulation of a locally repulsive marked spatial point process
 }
 \examples{
+library(spatstat)
 repulsion(1000, 0.05)
 repulsion(1000, 0.1, h = 0.1)
 }

@@ -22,6 +22,7 @@ an object of class "ggplot".
 Plot the heatmap induced by a tree partition of interaction between marks for a bivariate marked spatial point process
 }
 \examples{
+library(spatstat)
 library(spatcart)
 # Loading Paracou data set
 ypp = Paracoudata()

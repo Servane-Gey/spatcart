@@ -1,6 +1,6 @@
-#' Partition of a tree (with ggplot2)
+#' Partition of a tree (requires ggplot2)
 #'
-#' @description Plot the partition of a tree involving one or two variables. Requires package ggplot2.
+#' @description Plots the partition of a tree involving one or two variables. Requires package ggplot2.
 #'
 #' @param tree an object of class "tree". Currently provided by the functions spatcart or spattree.
 #' @param ordvars the ordering of the variables to be used in a 2D plot. Specify the names in a character string of length 2; the first will be used on the x axis.

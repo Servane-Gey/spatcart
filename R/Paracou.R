@@ -11,19 +11,20 @@
 #'
 #' @references *Spatial Classification Trees*, by A. Bar-Hen, S. Gey and J.-M. Poggi (2021).
 #'
-#' @import spatstat
 #' @import tree
 #' @import dplyr
 #' @import tidyr
 #' @import reshape2
 #' @import metR
 #' @import ggplot2
+#' @import spatstat
 #' @importFrom graphics lines
 #' @importFrom stats stepfun
 #'
 #' @export
 #'
 #' @examples
+#' library(spatcart)
 #' Paracou(15)
 Paracou = function(r, minsplit = 10, minleaf = 5, graph = TRUE){
   ypp = Paracou.pp

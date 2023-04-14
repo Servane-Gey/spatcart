@@ -16,8 +16,8 @@
 #'
 #' @import dplyr
 #' @import tidyr
-#' @import spatstat
 #' @import tree
+#' @import spatstat
 #'
 #' @details parameter minsplit must be at least 2xminleaf.
 #'
@@ -26,6 +26,7 @@
 #' @export
 #'
 #' @examples
+#' library(spatstat)
 #' library(spatcart)
 #' # Loading Paracou data set
 #' ypp = Paracoudata()
@@ -54,7 +55,7 @@ spattree = function(y, r, ties = TRUE, offset=NULL, wt=NULL, parms=NULL, minspli
 
   # Define initialization and outpout to function fit as "Global"
   tree.frame <<- data.frame(var=var,n=n,dev=dev,yval=yval,splits=I(splits),yprob=I(yprob))
-  where <<- integer()
+  wh <<- integer()
   cp <<- numeric()
   K <<- numeric()
 

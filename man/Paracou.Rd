@@ -22,6 +22,7 @@ a list of 7 objects of class "ggplot".
 Produce graphical results of CART and SpatCART algorithms at fixed initial resolution for the Paracou data set.
 }
 \examples{
+library(spatcart)
 Paracou(15)
 }
 \references{

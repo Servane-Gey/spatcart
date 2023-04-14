@@ -45,6 +45,7 @@ Spatial Classification Maximal Tree construction using the Ripley's intertype K-
 parameter minsplit must be at least 2xminleaf.
 }
 \examples{
+library(spatstat)
 library(spatcart)
 # Loading Paracou data set
 ypp = Paracoudata()

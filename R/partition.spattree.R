@@ -18,6 +18,7 @@
 #' @export
 #'
 #' @examples
+#' library(spatstat)
 #' library(spatcart)
 #' # Loading Paracou data set
 #' ypp = Paracoudata()

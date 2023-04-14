@@ -24,6 +24,7 @@ a list of data.frame objects with data points, marks distribution and Bayes pred
 Simulation of a bivariate marked spatial point process with marks distribued as a chessboard.
 }
 \examples{
+library(spatstat)
 damier(1000, model = "unif")
 damier(1000, model = "unif", h = 0.1)
 damier(1000, model = "Poisson")

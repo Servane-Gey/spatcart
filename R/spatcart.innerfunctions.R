@@ -7,6 +7,9 @@
 #' @param wt inner parameter
 #'
 #' @return node initialisation.
+#'
+#' @import spatstat
+#'
 #' @export
 #'
 #'
@@ -351,8 +354,8 @@ spfit = function(ynode, r, ties, offset, wt, parms, sub, nodeindex, minsplit, mi
       tree.frame$yprob = matrix(evalnode$nmarks/ynode$n, ncol=length(levels(ynode$marks)))
       colnames(tree.frame$yprob) = levels(ynode$marks)
       rownames(tree.frame) = nodeindex
-      where = rep(nodeindex,sum(sub))
-      names(where)=which(sub)
+      wh = rep(nodeindex,sum(sub))
+      names(wh)=which(sub)
       names(cp) = nodeindex
       names(K) = nodeindex
       # Else, recusively split current node
@@ -380,7 +383,7 @@ spfit = function(ynode, r, ties, offset, wt, parms, sub, nodeindex, minsplit, mi
       tright = yright %>% spfit(rright, ties, offset, wt, parms, subright, 2*nodeindex+1, minsplit, minleaf, mindev)
 
       tree.frame=rbind(tree.frame,tleft$frame,tright$frame)
-      where=c(where,tleft$where,tright$where)
+      wh=c(wh,tleft$where,tright$where)
       cp = c(cp, tleft$cp, tright$cp)
       K = c(K, tleft$K, tright$K)
     }
@@ -394,8 +397,8 @@ spfit = function(ynode, r, ties, offset, wt, parms, sub, nodeindex, minsplit, mi
     tree.frame$yprob = matrix(evalnode$nmarks/ynode$n, ncol=length(levels(ynode$marks)))
     colnames(tree.frame$yprob) = levels(ynode$marks)
     rownames(tree.frame) = nodeindex
-    where = rep(nodeindex,sum(sub))
-    names(where)=which(sub)
+    wh = rep(nodeindex,sum(sub))
+    names(wh)=which(sub)
     cp = 0L
     K = Kt$un[Kt$r>=r][1L]
     # cat(" Stop ! K(rt) = ", K)
@@ -403,7 +406,7 @@ spfit = function(ynode, r, ties, offset, wt, parms, sub, nodeindex, minsplit, mi
     names(K) = nodeindex
   }
   # Output : tree to current node and index of nodes
-  list(frame = tree.frame, where = where[order(as.integer(names(where)))], cp = cp, K = K)
+  list(frame = tree.frame, where = wh[order(as.integer(names(wh)))], cp = cp, K = K)
 }
 
 #' spatcart inner function
